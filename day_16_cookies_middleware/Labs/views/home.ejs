@@ -1,0 +1,9 @@
+<%- include("./partials/header") %>
+
+
+<% if (welcomeText) { %>
+<h1 id="welcomeText"> <%=welcomeText%> <%=username%> </h1>
+<% } else { %>
+<h1>Hello, Bonjour, Hola, Ni Hao...</h1>
+<% } %>
+<%- include("./partials/footer") %>

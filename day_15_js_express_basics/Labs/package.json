@@ -1,0 +1,17 @@
+{
+  "name": "lab_1",
+  "version": "1.0.0",
+  "description": "Car Status",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon lab_home.js"
+  },
+  "author": "Cale WIlliams",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.18.3"
+  }
+}

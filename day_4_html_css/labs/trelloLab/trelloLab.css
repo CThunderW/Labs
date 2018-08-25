@@ -1,0 +1,26 @@
+*{
+    font-family: sans-serif;
+}
+li {
+    color: black;
+    background-color: white;
+    list-style-type: none;
+    margin: 10px;
+    border-radius: 3px;
+    padding: 5px;
+    box-shadow: 3px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li[id="queue"] {
+    font-weight: bold;
+    background-color: lightslategray;
+}
+
+li[id="card"] {
+    background-color: lightslategray;
+    font: darkgray;
+}

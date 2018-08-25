@@ -1,0 +1,29 @@
+{
+  "name": "lesson",
+  "version": "1.0.0",
+  "description": "cookies and middleware",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "db:create": "createdb -e express_demo",
+    "db:drop": "dropdb -e --if-exists express_demo",
+    "db:migrate": "knex migrate:latest",
+    "db:rollback": "knex migrate:rollback",
+    "db:seed": "knex seed:run",
+    "db:repl": "psql -d express_demo"
+  },
+  "author": "Cale Williams",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "knex": "^0.15.2",
+    "morgan": "^1.9.0",
+    "path": "^0.12.7",
+    "pg": "^7.4.3"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0"
+  }
+}

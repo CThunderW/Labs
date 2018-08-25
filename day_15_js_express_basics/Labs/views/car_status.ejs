@@ -1,0 +1,17 @@
+<%- include("./partials/header") %>
+    <% if (carYear) { %>
+     <h1>YOUR CAR IS <%= carDescription %></h1> 
+     <% } %>    
+    
+    <form action ="/car_status">
+            <div>
+              <label for="carYear">In what year was your car made?</label><br /> 
+              <input type="text" id="carYear" name="carYear"> 
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+       
+    </body>
+</html>

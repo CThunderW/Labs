@@ -1,0 +1,16 @@
+<%- include("./partials/header") %>
+<form action = "/random_person">
+    
+    <div>
+        <label for="namesList"><h1>Please enter a series of names, separated by commas.</h1></label><br /> 
+        <input type="text" id="namesList" name="namesList"> 
+    </div>
+    <div>
+        <input type="submit" value="submit">
+</form>
+
+<% if (chosen) { %>
+<h1> <%= chosen %> WINS! </h1>
+<% } %>
+
+<%- include("./partials/footer") %>

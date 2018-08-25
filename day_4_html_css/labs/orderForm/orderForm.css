@@ -1,0 +1,20 @@
+#topform {
+    width: 60%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding:0px;
+}
+
+input[type="text"] {
+    width: 400px;
+    
+}
+
+input[type="password"]{
+    width: 400px;
+    
+}
+input[type="email"]{
+    width:400px;
+   
+}

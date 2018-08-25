@@ -1,0 +1,32 @@
+<%- include("./partials/header") %>
+
+<form action ="/fizzbuzz">
+    <div>
+        <label for="num1">Please select the first number</label>  
+        <select name="num1">
+            <% for (let i = 1; i<100; i++) { %>
+            <option value="<%= i %>"><%= i %></option>
+            <% }; %>
+        </select> 
+    </div>
+    <div>
+        <label for="num1">Please select the second number</label>  
+        <select name="num2">
+            <% for (let i = 1; i<100; i++) { %>
+            <option value="<%= i %>"><%= i %></option>
+            <% }; %>
+        </select> 
+    </div>
+    <div>
+        <input type="submit" value="submit">
+    </div>
+    <div>
+<% if (fizzBuzzResult) {
+    for (let numbaz of fizzBuzzResult) { %>
+    <h3> <%= numbaz %> </h3> 
+   <% }}; %>
+   </div>
+    
+
+
+<%- include("./partials/footer") %>

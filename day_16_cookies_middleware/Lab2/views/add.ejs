@@ -1,0 +1,30 @@
+<%- include("./partials/header.ejs") %>
+
+<% if (username === undefined) { %>
+<form action="/add">
+    <label for="username">You must sign in first. <br>Please enter your username below:</label>
+    <input type="text" id="username" name="username" placeholder="username">
+</form>
+
+ <% } else { %>
+
+<form action="/add" method="post">
+    <div>
+        <label for="description">What Do You Have To Do??</label><br>
+        <input type="text" placeholder="This will be the big text..." name="description" id="description">
+    </div>
+    <br>
+    <br>
+    <div>
+        <label for="bodyText">Describe it:</label><br>
+        <input type="text" placeholder="This will be the detailed view..." name="bodyText" id="bodyText">
+    </div>
+    <br>
+    <div>
+        <input type="submit" value="submit">
+    </div>
+</form>
+
+<% } %>
+
+<%- include("./partials/footer.ejs") %>

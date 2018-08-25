@@ -1,0 +1,16 @@
+{
+  "name": "js_express_basics",
+  "version": "1.0.0",
+  "description": "JS express basics demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Cale Williams",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0"
+  }
+}
